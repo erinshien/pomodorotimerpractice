@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Pomodoro Timer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Sigmar+One&family=Titan+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="index.js"></script>
+    </head>
+    <body>
+        <h1>Pomodoro Timer</h1>
+        <main class="container">
+            <div class="pomodoro">
+                <svg class="progress-ring progress-ring--shadow" viewBox="0 0 110 110">
+                    <circle r="50" cx="50%" cy="50%"></circle>
+                </svg>
+                <svg id="circleTimer" class="progress-ring progress-ring--timer" viewBox="0 0 110 110">
+                    <circle r="50" cx="50%" cy="50%"></circle>
+                </svg>
+                <img id="image" src="">
+            </div>
+            <div class="controls">
+                <div class="timers">
+                    <div id="workTimer" class="timer timer--active">00:00</div>
+                    <div id="breakTimer" class="timer">00:00</div>
+                </div>
+                <button class="control-btn"></button>
+                <button id="addTimeBtn" class="add-time-btn">+ 1 minute</button>
+            </div>
+
+        </main>
+    </body>
+</html>
